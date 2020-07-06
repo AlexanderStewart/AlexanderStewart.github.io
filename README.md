@@ -1,6 +1,6 @@
 ## alexanderstewart.github.io
 
-Alexander Stewart's Portfolio Page.
+Alexander Stewart's portfolio page.
 
 https://alexanderstewart.github.io/#/
 
