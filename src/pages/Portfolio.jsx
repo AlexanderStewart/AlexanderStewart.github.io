@@ -4,6 +4,7 @@ import React from "react";
 import "../styles/main.scss";
 import GoldenSum from "../assets/golden_sum.png";
 import Circles from "../assets/circles.png";
+import CompSciCalc from "../assets/comp_sci_calc.png";
 import NavigationPortfolio from "../components/NavigationPortfolio";
 
 class Home extends React.Component {
@@ -63,6 +64,26 @@ class Home extends React.Component {
                       Circles is a number puzzle game made for the web that was
                       built with the framework React. Circles (as you can
                       probably tell) is heavily inspired by Golden Sum.
+                    </p>
+                  </div>
+                  <div className="space-b"></div>
+                  <div className="portfolio-content">
+                    <img
+                      className="portfolio-content-image"
+                      src={CompSciCalc}
+                      alt="Circles Screenshot"
+                    />
+                    <h2 className="heavy-font">
+                      <a
+                        className="red-text"
+                        href="https://alexanderstewart.github.io/comp-sci-calculator/#/"
+                      >
+                        CompSciCalculator
+                      </a>
+                    </h2>
+                    <p className="blurb blurb-b black-text light-font">
+                      CompSciCalculator is a really simple tool to convert
+                      between number systems.
                     </p>
                   </div>
                 </div>
