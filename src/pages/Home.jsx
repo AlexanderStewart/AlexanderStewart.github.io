@@ -33,16 +33,14 @@ class Home extends React.Component {
 
             <p className="blurb black-text light-font">
               I'm a front end web developer living in Toronto. I currently
-              attend Algonquin College for computer programming.<br></br>
+              attend Algonquin College for computer programming.
+            </p>
+
+            <p className="blurb black-text light-font text-align-right">
+              <a href="https://github.com/AlexanderStewart">github</a>
               <br></br>
-              Here is my github:{" "}
-              <a href="https://github.com/AlexanderStewart">
-                github.com/AlexanderStewart
-              </a>
-              <br></br>
-              Here is my linkedin:{" "}
               <a href="https://www.linkedin.com/in/alexander-stewart-aaa048156/">
-                www.linkedin.com/in/alexander-stewart-aaa048156/
+                linkedin
               </a>
             </p>
             <div className="space-a"></div>
