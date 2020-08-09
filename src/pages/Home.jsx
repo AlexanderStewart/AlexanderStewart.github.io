@@ -5,6 +5,9 @@ import "../styles/main.scss";
 import HeadShot from "../assets/head_shot.png";
 import NavigationAbout from "../components/NavigationAbout";
 
+//Packages.
+import ParticlesBg from "particles-bg";
+
 class Home extends React.Component {
   render() {
     return (

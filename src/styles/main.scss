@@ -221,7 +221,7 @@ $white: #ffffff;
 
 .header-text {
   animation-duration: 0.6s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-name: slideInFromLeft;
@@ -229,7 +229,7 @@ $white: #ffffff;
 
 .header-text-b {
   animation-duration: 0.6s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-name: slideInFromLeft;
@@ -237,7 +237,7 @@ $white: #ffffff;
 
 .head-shot-container {
   animation-duration: 1.2s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-name: slideInFromRight;
@@ -245,7 +245,7 @@ $white: #ffffff;
 
 .navigation {
   animation-duration: 1.8s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-name: slideInFromLeftB;
@@ -253,7 +253,7 @@ $white: #ffffff;
 
 .blurb {
   animation-duration: 1.8s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-name: slideInFromLeftB;
@@ -261,7 +261,7 @@ $white: #ffffff;
 
 .portfolio-content {
   animation-duration: 1.2s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-name: slideInFromRight;
