@@ -68,7 +68,6 @@ $white: #ffffff;
   padding-right: 40px;
   width: 100%;
   max-width: 800px;
-  padding-top: 50px;
 }
 
 .portfolio-content-image {
@@ -219,6 +218,37 @@ $white: #ffffff;
   }
 }
 
+.line-a {
+  width: 0%;
+  height: 12px;
+  background: $red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: line-animation 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.line-b {
+  width: 0%;
+  height: 12px;
+  background: $red;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  animation: line-animation 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes line-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .header-text {
   animation-duration: 0.6s;
   animation-timing-function: ease-in-out;
@@ -287,6 +317,11 @@ $white: #ffffff;
   .space-b {
     height: 1px;
     width: 2vw;
+  }
+
+  .space-c {
+    width: 1px;
+    height: 20px;
   }
 
   .head-shot-container {

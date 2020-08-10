@@ -11,11 +11,12 @@ import ParticlesBg from "particles-bg";
 class Home extends React.Component {
   render() {
     return (
-      <div className="home">
+      <div className="home 1.1">
         <div className="center-page">
           <div className="main-width">
+            <div className="line-a"></div>
+            <div className="space-c"></div>
             <NavigationAbout />
-
             <div className="flex-content-a-container">
               <div className="flex-content-a">
                 <h1 className="header-text black-text heavy-font">
@@ -46,7 +47,8 @@ class Home extends React.Component {
                 linkedin
               </a>
             </p>
-            <div className="space-a"></div>
+            <div className="space-c"></div>
+            <div className="line-b"></div>
           </div>
         </div>
       </div>
