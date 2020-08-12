@@ -1,0 +1,109 @@
+$black: #000000;
+$red: #c26565;
+$white: #ffffff;
+
+.line-a {
+  width: 0%;
+  height: 6px;
+  background: $red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: line-animation 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.line-b {
+  width: 0%;
+  height: 6px;
+  background: $red;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  animation: line-animation 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes line-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.line-c {
+  width: 6px;
+  height: 0%;
+  background: $red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: line-animation-b 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.line-d {
+  width: 6px;
+  height: 0%;
+  background: $red;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  animation: line-animation-b 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes line-animation-b {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.line-e {
+  width: 0%;
+  height: 6px;
+  background: $red;
+  position: fixed;
+  top: 6px;
+  left: 0;
+  animation: line-animation 1s ease-in-out forwards;
+  animation-delay: 1.6s;
+}
+
+.line-f {
+  width: 0%;
+  height: 6px;
+  background: $red;
+  position: fixed;
+  bottom: 6px;
+  right: 0;
+  animation: line-animation 1s ease-in-out forwards;
+  animation-delay: 1.6s;
+}
+
+.line-g {
+  width: 6px;
+  height: 0%;
+  background: $red;
+  position: fixed;
+  top: 0;
+  left: 6px;
+  animation: line-animation-b 1s ease-in-out forwards;
+  animation-delay: 1.6s;
+}
+
+.line-h {
+  width: 6px;
+  height: 0%;
+  background: $red;
+  position: fixed;
+  bottom: 0;
+  right: 6px;
+  animation: line-animation-b 1s ease-in-out forwards;
+  animation-delay: 1.6s;
+}

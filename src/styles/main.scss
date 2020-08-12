@@ -1,5 +1,5 @@
-$black: #707070;
-$red: #ff9d9d;
+$black: #000000;
+$red: #c26565;
 $white: #ffffff;
 
 //Fonts
@@ -62,6 +62,16 @@ $white: #ffffff;
 }
 
 //non reusable styles
+.half-background {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f5efdf;
+  z-index: -1;
+}
+
 html,
 body {
   &,
@@ -170,7 +180,6 @@ body {
   transition: 0.5s;
   font-size: 3em;
   line-height: 1;
-  padding-right: 20px;
   text-align: center;
 }
 
@@ -204,12 +213,20 @@ body {
 }
 
 .blurb {
+  text-align: center;
   padding-top: 22px;
   font-size: 1.2em;
 }
 
 .blurb-b {
+  text-align: center;
   padding-top: 0px;
+  font-size: 1.2em;
+}
+
+.blurb-c {
+  text-align: left;
+  font-size: 1.2em;
 }
 
 .flex-content-a {
@@ -258,68 +275,6 @@ body {
   }
 }
 
-.line-a {
-  width: 0%;
-  height: 12px;
-  background: $red;
-  position: fixed;
-  top: 0;
-  left: 0;
-  animation: line-animation 1s ease-in-out forwards;
-  animation-delay: 1s;
-}
-
-.line-b {
-  width: 0%;
-  height: 12px;
-  background: $red;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  animation: line-animation 1s ease-in-out forwards;
-  animation-delay: 1s;
-}
-
-@keyframes line-animation {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.line-c {
-  width: 12px;
-  height: 0%;
-  background: $red;
-  position: fixed;
-  top: 0;
-  left: 0;
-  animation: line-animation-b 1s ease-in-out forwards;
-  animation-delay: 1s;
-}
-
-.line-d {
-  width: 12px;
-  height: 0%;
-  background: $red;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  animation: line-animation-b 1s ease-in-out forwards;
-  animation-delay: 1s;
-}
-
-@keyframes line-animation-b {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 100%;
-  }
-}
-
 .header-text {
   animation-duration: 0.6s;
   animation-timing-function: ease-in-out;
@@ -356,6 +311,22 @@ body {
 }
 
 .blurb {
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInFromRight;
+}
+
+.blurb-b {
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInFromLeftB;
+}
+
+.blurb-c {
   animation-duration: 1.8s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
@@ -416,6 +387,12 @@ body {
   }
   .portfolio-content {
     width: 12em;
+  }
+  .blurb {
+    text-align: left;
+  }
+  .blurb-b {
+    text-align: right;
   }
 }
 

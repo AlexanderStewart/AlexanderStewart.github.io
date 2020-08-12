@@ -3,6 +3,7 @@ import React from "react";
 
 //Local stuff.
 import "../styles/main.scss";
+import "../styles/lines.scss";
 import HeadShot from "../assets/head_shot.png";
 import NavigationAbout from "../components/NavigationAbout";
 
@@ -13,6 +14,13 @@ function Home() {
       <div className="line-b"></div>
       <div className="line-c"></div>
       <div className="line-d"></div>
+      <div className="line-e"></div>
+      <div className="line-f"></div>
+      <div className="line-g"></div>
+      <div className="line-h"></div>
+
+      <div className="half-background"></div>
+
       <div className="center-page">
         <div className="main-width">
           <div className="space-c"></div>
@@ -40,7 +48,7 @@ function Home() {
             Algonquin College for computer programming.
           </p>
 
-          <p className="blurb black-text light-font text-align-right">
+          <p className="blurb-b black-text light-font text-align-right">
             <a href="https://github.com/AlexanderStewart">github</a>
             <br></br>
             <a href="https://www.linkedin.com/in/alexander-stewart-aaa048156/">

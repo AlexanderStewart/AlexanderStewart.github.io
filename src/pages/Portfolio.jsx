@@ -10,6 +10,7 @@ import NavigationPortfolio from "../components/NavigationPortfolio";
 function Home() {
   return (
     <div className="portfolio">
+      <div className="half-background"></div>
       <div className="horizontally-center-page">
         <div className="main-width">
           <NavigationPortfolio />
@@ -38,7 +39,7 @@ function Home() {
                       Golden Sum
                     </a>
                   </h2>
-                  <p className="blurb blurb-b black-text light-font">
+                  <p className="blurb-c black-text light-font">
                     Golden sum is a number puzzle game for Android and IOS. It
                     was built with the UI toolkit Flutter and features in-app
                     purchases as well as ads.
@@ -59,7 +60,7 @@ function Home() {
                       Circles
                     </a>
                   </h2>
-                  <p className="blurb blurb-b black-text light-font">
+                  <p className="blurb-c black-text light-font">
                     Circles is a number puzzle game made for the web that was
                     built with the framework React. Circles (as you can probably
                     tell) is heavily inspired by Golden Sum.
@@ -80,7 +81,7 @@ function Home() {
                       CompSciCalculator
                     </a>
                   </h2>
-                  <p className="blurb blurb-b black-text light-font">
+                  <p className="blurb-c black-text light-font">
                     CompSciCalculator is a really simple tool to convert between
                     number systems.
                   </p>

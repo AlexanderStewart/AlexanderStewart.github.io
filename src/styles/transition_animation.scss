@@ -1,0 +1,15 @@
+$columns: 12;
+
+%float-styles {
+  float: left;
+}
+
+@mixin col-x-list {
+  @for $i from 1 through $columns {
+    .col-#{$i}-m {
+      @extend %float-styles;
+    }
+  }
+}
+
+@include col-x-list;
