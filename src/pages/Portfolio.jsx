@@ -4,7 +4,7 @@ import React from "react";
 import "../styles/main.scss";
 import GoldenSum from "../assets/golden_sum.png";
 import Circles from "../assets/circles.png";
-import CompSciCalc from "../assets/comp_sci_calc.png";
+import CigQuit from "../assets/cig_quit.png";
 import NavigationPortfolio from "../components/NavigationPortfolio";
 
 function Home() {
@@ -70,7 +70,7 @@ function Home() {
                 <div className="portfolio-content">
                   <img
                     className="portfolio-content-image"
-                    src={CompSciCalc}
+                    src={CigQuit}
                     alt="Circles Screenshot"
                   />
                   <h2 className="heavy-font">
@@ -78,12 +78,12 @@ function Home() {
                       className="red-text"
                       href="https://alexanderstewart.github.io/comp-sci-calculator/#/"
                     >
-                      CompSciCalculator
+                      Cig-Quit
                     </a>
                   </h2>
                   <p className="blurb-c black-text light-font">
-                    CompSciCalculator is a really simple tool to convert between
-                    number systems.
+                    Cig-Quit is a web app designed to help motivate you to quick
+                    smoking by tracking various metrics.
                   </p>
                 </div>
               </div>

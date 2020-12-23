@@ -44,8 +44,8 @@ function Home() {
           </div>
 
           <p className="blurb black-text light-font">
-            I'm a front end web developer living in Toronto. I currently attend
-            Algonquin College for computer programming.
+            I'm a Full Stack Web Developer living in Toronto. I currently attend
+            Algonquin College for Computer Programming.
           </p>
 
           <p className="blurb-b black-text light-font text-align-right">
