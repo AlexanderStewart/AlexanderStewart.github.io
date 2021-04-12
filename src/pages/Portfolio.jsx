@@ -41,8 +41,8 @@ function Home() {
                 </h2>
                 <p className="blurb-c black-text light-font">
                   Golden sum is a number puzzle game for Android and IOS. It was
-                  built with the UI toolkit Flutter and features in-app
-                  purchases as well as ads.
+                  built with Flutter and features in-app purchases as well as
+                  ads.
                 </p>
               </div>
               <div className="space-b"></div>
