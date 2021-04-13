@@ -2,6 +2,14 @@ $black: #000000;
 $red: #df7777;
 $white: #ffffff;
 
+html,
+body {
+  &,
+  * {
+    cursor: auto;
+  }
+}
+
 //Fonts
 .heavy-font {
   font-family: ivypresto-display, serif;
@@ -70,43 +78,6 @@ $white: #ffffff;
   left: 0;
   background-color: #f5efdf;
   z-index: -1;
-}
-
-html,
-body {
-  &,
-  * {
-    cursor: none;
-  }
-}
-
-.cursor-dot,
-.cursor-dot-outline {
-  z-index: 10;
-  top: auto;
-  left: auto;
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.cursor-dot {
-  $size: 8px;
-  width: $size;
-  height: $size;
-  background-color: $black;
-}
-
-.cursor-dot-outline {
-  $size: 60px;
-  width: $size;
-  height: $size;
-  background-color: rgba($red, 0.5);
 }
 
 .main-width {
@@ -414,6 +385,43 @@ body {
 }
 
 @media (min-width: 797px) {
+  html,
+  body {
+    &,
+    * {
+      cursor: none;
+    }
+  }
+
+  .cursor-dot,
+  .cursor-dot-outline {
+    z-index: 10;
+    top: auto;
+    left: auto;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .cursor-dot {
+    $size: 8px;
+    width: $size;
+    height: $size;
+    background-color: $black;
+  }
+
+  .cursor-dot-outline {
+    $size: 60px;
+    width: $size;
+    height: $size;
+    background-color: rgba($red, 0.5);
+  }
+
   .header-text {
     font-size: 3.5em;
   }
