@@ -85,8 +85,8 @@ function Home() {
                   </a>
                 </h2>
                 <p className="blurb-c black-text light-font">
-                  CigQuit is a MERN stack web app designed to help motivate you
-                  to quick smoking by tracking various smoking metrics.
+                  CigQuit is a MERN stack web app designed to help motivate
+                  users to quick smoking by tracking various smoking metrics.
                 </p>
               </div>
             </div>
