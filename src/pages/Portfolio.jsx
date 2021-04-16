@@ -26,11 +26,13 @@ function Home() {
           <div className="flex-content-a-container">
             <div className="flex-content-a">
               <div className="portfolio-content">
-                <img
-                  className="portfolio-content-image shadow"
-                  src={GoldenSum}
-                  alt="Golden Sum Screenshot"
-                />
+                <a href="https://apps.apple.com/us/app/golden-sum-a-math-puzzle-game/id1458212055">
+                  <img
+                    className="portfolio-content-image shadow"
+                    src={GoldenSum}
+                    alt="Golden Sum Screenshot"
+                  />
+                </a>
                 <h2 className="heavy-font">
                   <a
                     className="red-text"
@@ -47,11 +49,13 @@ function Home() {
               </div>
               <div className="space-b"></div>
               <div className="portfolio-content">
-                <img
-                  className="portfolio-content-image shadow"
-                  src={Circles}
-                  alt="Circles Screenshot"
-                />
+                <a href="https://alexanderstewart.github.io/circles-web/">
+                  <img
+                    className="portfolio-content-image"
+                    src={Circles}
+                    alt="Circles Screenshot"
+                  />
+                </a>
                 <h2 className="heavy-font">
                   <a
                     className="red-text"
@@ -68,29 +72,33 @@ function Home() {
               </div>
               <div className="space-b"></div>
               <div className="portfolio-content">
-                <img
-                  className="portfolio-content-image"
-                  src={CigQuit}
-                  alt="CigQuit Screenshot"
-                />
+                <a href="https://cigquit.org/">
+                  <img
+                    className="portfolio-content-image"
+                    src={CigQuit}
+                    alt="CigQuit Screenshot"
+                  />
+                </a>
                 <h2 className="heavy-font">
                   <a className="red-text" href="https://cigquit.org/">
                     CigQuit
                   </a>
                 </h2>
                 <p className="blurb-c black-text light-font">
-                  CigQuit is a web app designed to help motivate you to quick
-                  smoking by tracking various smoking metrics.
+                  CigQuit is a MERN stack web app designed to help motivate you
+                  to quick smoking by tracking various smoking metrics.
                 </p>
               </div>
             </div>
             <div className="flex-content-b">
               <div className="portfolio-content">
-                <img
-                  className="portfolio-content-image"
-                  src={CompCalc}
-                  alt="CigQuit Screenshot"
-                />
+                <a href="https://alexanderstewart.github.io/comp-sci-calculator/#/">
+                  <img
+                    className="portfolio-content-image"
+                    src={CompCalc}
+                    alt="CigQuit Screenshot"
+                  />
+                </a>
                 <h2 className="heavy-font">
                   <a
                     className="red-text"
@@ -100,7 +108,8 @@ function Home() {
                   </a>
                 </h2>
                 <p className="blurb-c black-text light-font">
-                  A really simple tool to convert between number systems.
+                  CompSciCalculator is a really simple tool to convert between
+                  number systems.
                 </p>
               </div>
             </div>
