@@ -46,7 +46,7 @@ function Home() {
           <p className="blurb black-text light-font">
             I'm a Full Stack Web Developer living in Toronto. I currently attend
             Algonquin College for Computer Programming.{" "}
-            <Link to="/">Learn more about me.</Link>
+            <Link to="/about">Learn more about me.</Link>
           </p>
 
           <p className="blurb-b black-text light-font text-align-right">

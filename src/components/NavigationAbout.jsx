@@ -12,7 +12,12 @@ function Nav() {
         <p className="link-text black-text light-font">Portfolio</p>
       </Link>
       <Link className="link" to="/about">
-        <p className="link-text link-underline black-text light-font">About</p>
+        <p className="link-text link-underline black-text light-font">
+          About me
+        </p>
+      </Link>
+      <Link className="link" to="/contact">
+        <p className="link-text black-text light-font">Contact</p>
       </Link>
     </div>
   );

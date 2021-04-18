@@ -33,14 +33,14 @@ function Home() {
                     alt="Golden Sum Screenshot"
                   />
                 </a>
-                <h2 className="heavy-font">
+                <h3 className="heavy-font portfolio-item-title">
                   <a
                     className="red-text"
                     href="https://apps.apple.com/us/app/golden-sum-a-math-puzzle-game/id1458212055"
                   >
                     Golden Sum
                   </a>
-                </h2>
+                </h3>
                 <p className="blurb-c black-text light-font">
                   Golden sum is a number puzzle game for Android and IOS. It was
                   built with Flutter and features in-app purchases as well as
@@ -55,14 +55,14 @@ function Home() {
                     alt="Circles Screenshot"
                   />
                 </a>
-                <h2 className="heavy-font">
+                <h3 className="heavy-font portfolio-item-title">
                   <a
                     className="red-text"
                     href="https://alexanderstewart.github.io/circles-web/"
                   >
                     Circles
                   </a>
-                </h2>
+                </h3>
                 <p className="blurb-c black-text light-font">
                   Circles is a number puzzle game made for the web that was
                   built with the framework React. Circles (as you can probably
@@ -77,11 +77,11 @@ function Home() {
                     alt="CigQuit Screenshot"
                   />
                 </a>
-                <h2 className="heavy-font">
+                <h3 className="heavy-font portfolio-item-title">
                   <a className="red-text" href="https://cigquit.org/">
                     CigQuit
                   </a>
-                </h2>
+                </h3>
                 <p className="blurb-c black-text light-font">
                   CigQuit is a MERN stack web app designed to help motivate
                   users to quick smoking by tracking various smoking metrics.
@@ -97,14 +97,14 @@ function Home() {
                     alt="CigQuit Screenshot"
                   />
                 </a>
-                <h2 className="heavy-font">
+                <h3 className="heavy-font portfolio-item-title">
                   <a
                     className="red-text"
                     href="https://alexanderstewart.github.io/comp-sci-calculator/#/"
                   >
                     CompSciCalculator
                   </a>
-                </h2>
+                </h3>
                 <p className="blurb-c black-text light-font">
                   CompSciCalculator is a really simple tool to convert between
                   number systems.

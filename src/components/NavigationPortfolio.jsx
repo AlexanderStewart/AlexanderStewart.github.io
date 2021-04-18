@@ -14,7 +14,10 @@ function Nav() {
         </p>
       </Link>
       <Link className="link" to="/about">
-        <p className="link-text black-text light-font">About</p>
+        <p className="link-text black-text light-font">About me</p>
+      </Link>
+      <Link className="link" to="/contact">
+        <p className="link-text black-text light-font">Contact</p>
       </Link>
     </div>
   );

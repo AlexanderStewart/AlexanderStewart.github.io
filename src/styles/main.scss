@@ -50,7 +50,7 @@ body {
 }
 
 .text-align-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .text-align-right {
@@ -67,6 +67,10 @@ body {
 
 .red-text {
   color: $red;
+}
+
+.portfolio-item-title {
+  margin-top: 20px;
 }
 
 //non reusable styles
@@ -89,15 +93,19 @@ body {
 }
 
 .portfolio {
-  padding: 35px 0px 35px 0px;
+  padding: 80px 0px;
 }
 
-.home {
-  padding: 35px 0px 35px 0px;
+.contact {
+  padding: 80px 0px;
 }
 
 .about {
-  padding: 35px 0px 35px 0px;
+  padding: 80px 0px;
+}
+
+.home {
+  padding: 80px 0px;
 }
 
 .overlap {
@@ -106,8 +114,8 @@ body {
 }
 
 .portfolio-content-image {
-  width: 12em;
-  height: 12em;
+  width: 11em;
+  height: 11em;
   border-radius: 20px;
   transition: 0.5s;
   border-style: solid;
@@ -116,7 +124,7 @@ body {
 }
 
 .portfolio-content {
-  width: 12em;
+  width: 11em;
 }
 
 .navigation-container-a {
@@ -163,6 +171,8 @@ body {
   font-size: 3em;
   line-height: 1;
   text-align: center;
+  margin-bottom: 22px;
+  margin-top: 22px;
 }
 
 .header-text-b {
@@ -171,6 +181,8 @@ body {
   line-height: 1;
   padding-right: 20px;
   text-align: left;
+  margin-bottom: 40px;
+  margin-top: 22px;
 }
 
 .header-text:hover {
@@ -187,6 +199,7 @@ body {
 
 .head-shot {
   width: 200px;
+  padding: 12px;
 }
 
 .head-shot-container {
@@ -288,7 +301,6 @@ body {
 .head-shot-container {
   background-color: $red;
   border-radius: 100%;
-  padding: 12px;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
@@ -337,6 +349,10 @@ body {
 }
 
 @media (min-width: 600px) {
+  .home {
+    padding: 0px;
+  }
+
   .header-text {
     text-align: left;
   }
@@ -370,11 +386,11 @@ body {
   }
 
   .portfolio-content-image {
-    width: 12em;
-    height: 12em;
+    width: 11em;
+    height: 11em;
   }
   .portfolio-content {
-    width: 12em;
+    width: 11em;
   }
   .blurb {
     text-align: left;
@@ -438,7 +454,7 @@ body {
   .head-shot-container {
     width: 250px;
     height: 250px;
-    margin-top: calc(-250px / 4.6);
+    margin-top: 2000px;
   }
 
   .head-shot {
@@ -446,11 +462,11 @@ body {
   }
 
   .portfolio-content-image {
-    width: 16em;
-    height: 16em;
+    width: 14em;
+    height: 14em;
   }
   .portfolio-content {
-    width: 16em;
+    width: 14em;
   }
 }
 
