@@ -46,7 +46,10 @@ function Contact() {
                   </Form>
                 </Card.Body>
               </Card>
-              <Card className="shadow bg-white mt-3 rounded">
+              <Card
+                border="warning"
+                className="shadow bg-white mt-1 rounded text-align-center"
+              >
                 <Card.Body>
                   Don't trust this form? My email is
                   alexander.stewart.developer@gmail.com
