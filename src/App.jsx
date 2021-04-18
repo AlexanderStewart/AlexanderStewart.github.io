@@ -5,6 +5,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 //Pages.
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
 
 const App = () => {
   const cursorDot = useRef();
@@ -150,6 +151,7 @@ const App = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/portfolio" component={Portfolio} />
+          <Route path="/about" component={About} />
         </Switch>
       </HashRouter>
     </div>

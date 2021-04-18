@@ -2,17 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/main.scss";
 
-function Circles() {
+function Nav() {
   return (
     <div className="navigation">
       <Link className="link" to="/">
-        <p className="link-about black-text light-font">About</p>
+        <p className="link-text black-text light-font">Home</p>
       </Link>
       <Link className="link" to="/portfolio">
-        <p className="link-portfolio black-text light-font">Portfolio</p>
+        <p className="link-text black-text light-font">Portfolio</p>
+      </Link>
+      <Link className="link" to="/about">
+        <p className="link-text link-underline black-text light-font">About</p>
       </Link>
     </div>
   );
 }
 
-export default Circles;
+export default Nav;

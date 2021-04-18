@@ -88,6 +88,14 @@ body {
   max-width: 800px;
 }
 
+.portfolio {
+  padding: 50px 0px;
+}
+
+.home {
+  padding: 50px 0px;
+}
+
 .portfolio-content-image {
   width: 12em;
   height: 12em;
@@ -116,9 +124,9 @@ body {
   text-decoration: none;
 }
 
-.link-about,
-.link-portfolio {
+.link-text {
   font-size: 1.5em;
+  line-height: 0.5em;
   transition: 0.5s;
 }
 
@@ -131,21 +139,14 @@ body {
   text-decoration: none;
 }
 
-.link-portfolio-b {
+.link-underline {
   text-decoration: underline;
   text-decoration-color: $black;
 }
 
-.link-portfolio {
-  line-height: 0;
-}
-
-.link-about:hover {
+.link-text:hover {
   color: $red;
-}
-
-.link-portfolio:hover {
-  color: $red;
+  cursor: pointer;
 }
 
 .header-text {
@@ -333,21 +334,6 @@ body {
     height: 100vh;
   }
 
-  .space-a {
-    height: 10vh;
-    width: 1px;
-  }
-
-  .space-b {
-    height: 1px;
-    width: 2vw;
-  }
-
-  .space-c {
-    width: 1px;
-    height: 20px;
-  }
-
   .head-shot-container {
     margin-top: calc(-200px / 6);
   }
@@ -391,6 +377,11 @@ body {
     * {
       cursor: none;
     }
+  }
+
+  .link-text:hover {
+    color: $red;
+    cursor: none;
   }
 
   .cursor-dot,

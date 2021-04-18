@@ -47,7 +47,6 @@ function Home() {
                   ads.
                 </p>
               </div>
-              <div className="space-b"></div>
               <div className="portfolio-content">
                 <a href="https://alexanderstewart.github.io/circles-web/">
                   <img
@@ -70,7 +69,6 @@ function Home() {
                   tell) is heavily inspired by Golden Sum.
                 </p>
               </div>
-              <div className="space-b"></div>
               <div className="portfolio-content">
                 <a href="https://cigquit.org/">
                   <img
@@ -114,8 +112,6 @@ function Home() {
               </div>
             </div>
           </div>
-
-          <div className="space-a"></div>
         </div>
       </div>
     </div>

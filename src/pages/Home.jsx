@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import { useRef, useLayoutEffect } from "react";
 
 //Local stuff.
 import "../styles/main.scss";
 import "../styles/lines.scss";
 import HeadShot from "../assets/head_shot.png";
-import NavigationAbout from "../components/NavigationAbout";
+import NavigationHome from "../components/NavigationHome";
 
 function Home() {
   return (
-    <div className="home 1.1">
+    <div className="home">
       <div className="line-a"></div>
       <div className="line-b"></div>
       <div className="line-c"></div>
@@ -23,8 +24,7 @@ function Home() {
 
       <div className="center-page">
         <div className="main-width">
-          <div className="space-c"></div>
-          <NavigationAbout />
+          <NavigationHome />
           <div className="flex-content-a-container">
             <div className="flex-content-a">
               <h1 className="header-text black-text heavy-font">
@@ -45,7 +45,8 @@ function Home() {
 
           <p className="blurb black-text light-font">
             I'm a Full Stack Web Developer living in Toronto. I currently attend
-            Algonquin College for Computer Programming.
+            Algonquin College for Computer Programming.{" "}
+            <Link to="/">Learn more about me.</Link>
           </p>
 
           <p className="blurb-b black-text light-font text-align-right">
@@ -55,7 +56,6 @@ function Home() {
               linkedin
             </a>
           </p>
-          <div className="space-c"></div>
         </div>
       </div>
     </div>
