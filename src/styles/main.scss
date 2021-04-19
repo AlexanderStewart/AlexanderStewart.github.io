@@ -177,7 +177,7 @@ body {
 }
 
 .portfolio-content-b {
-  width: 26em;
+  width: 16em;
 }
 
 .portfolio-content-double {
@@ -226,7 +226,7 @@ body {
 .header-text {
   transition: 0.5s;
   font-size: 3em;
-  line-height: 1;
+  line-height: 1.1;
   text-align: center;
   margin-bottom: 22px;
   margin-top: 22px;
@@ -397,7 +397,7 @@ body {
   animation-name: slideInFromLeftB;
 }
 
-.portfolio-content {
+.portfolio-content-b .portfolio-content {
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
@@ -522,8 +522,13 @@ body {
     width: 14em;
     height: 14em;
   }
+
   .portfolio-content {
     width: 14em;
+  }
+
+  .portfolio-content-b {
+    width: 26em;
   }
 }
 

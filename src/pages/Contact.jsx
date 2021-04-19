@@ -1,14 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Form, Card, Button, Alert } from "react-bootstrap";
 
 //Local stuff.
 import "../styles/main.scss";
 import NavigationContact from "../components/NavigationContact";
-import { Form, Card, Button } from "react-bootstrap";
 
 function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [state, handleSubmit] = useForm("xoqyvnve");
+  const [showContact, setShowContact] = useState(false);
+
+  if (state.succeeded) {
+    setShowContact(true);
+  }
 
   return (
     <div className="about">
@@ -18,7 +26,7 @@ function Contact() {
           <NavigationContact />
 
           <div className="center">
-            <h1 className="header-text-b black-text heavy-font">
+            <h1 className="header-text black-text heavy-font">
               Get in touch
               <span className="period">.</span>
             </h1>
@@ -26,30 +34,51 @@ function Contact() {
 
           <div className="flex-content-a-container">
             <div className="blurb">
+              {showContact && (
+                <Alert variant="success">
+                  I'll be in touch with you shortly!
+                </Alert>
+              )}
               <Card border="dark" className="bg-white rounded border-3">
                 <Card.Body>
-                  <Form>
-                    <Form.Group controlId="exampleForm.ControlInput0">
-                      <Form.Label className="label">Name</Form.Label>
-                      <Form.Control className="border-2" type="name" />
-                    </Form.Group>
+                  <Form onSubmit={handleSubmit}>
                     <Form.Group controlId="exampleForm.ControlInput1">
-                      <Form.Label className="label">Email address</Form.Label>
+                      <Form.Label className="label" htmlFor="email">
+                        Email address
+                      </Form.Label>
                       <Form.Control
                         className="border-2"
+                        name="email"
                         type="email"
                         placeholder="name@example.com"
                       />
                     </Form.Group>
+                    <ValidationError
+                      prefix="Email"
+                      field="email"
+                      errors={state.errors}
+                    />
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                       <Form.Label className="label">Message</Form.Label>
                       <Form.Control
                         className="border-2"
+                        id="message"
+                        name="message"
                         as="textarea"
                         rows={3}
                       />
                     </Form.Group>
-                    <Button className="label" variant="dark" type="submit">
+                    <ValidationError
+                      prefix="Message"
+                      field="message"
+                      errors={state.errors}
+                    />
+                    <Button
+                      className="label"
+                      variant="dark"
+                      type="submit"
+                      disabled={state.submitting}
+                    >
                       Submit
                     </Button>
                   </Form>
@@ -57,7 +86,7 @@ function Contact() {
               </Card>
               <Card
                 border="warning"
-                className="bg-white mt-1 rounded text-align-center border-3"
+                className="bg-white mt-1 rounded text-align-left border-3"
               >
                 <Card.Body>
                   Don't trust this form? My email is{" "}

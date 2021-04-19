@@ -18,7 +18,7 @@ function GoldenSum() {
           <Navigation />
 
           <div className="center">
-            <h1 className="header-text-b black-text heavy-font">
+            <h1 className="header-text black-text heavy-font">
               Golden Sum
               <span className="period">.</span>
             </h1>
@@ -42,15 +42,15 @@ function GoldenSum() {
                   uniquely crafted levels.
                   <br></br>
                   <br></br>
-                  View Golden Sum on{" "}
+                  View Golden Sum on the{" "}
                   <a href="https://apps.apple.com/us/app/golden-sum-a-math-puzzle-game/id1458212055">
                     IOS
                   </a>{" "}
                   or{" "}
                   <a href="https://play.google.com/store/apps/details?id=com.goldensum&hl=en_CA&gl=US">
                     Android
-                  </a>
-                  .
+                  </a>{" "}
+                  store.
                 </p>
               </div>
               <div className="animate-from-right">

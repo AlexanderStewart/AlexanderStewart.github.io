@@ -18,8 +18,8 @@ function CompSciCalc() {
           <Navigation />
 
           <div className="center">
-            <h1 className="header-text-b black-text heavy-font">
-              CompSciCalculator
+            <h1 className="header-text black-text heavy-font">
+              CompSci<br></br>Calculator
               <span className="period">.</span>
             </h1>
           </div>

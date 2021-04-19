@@ -22,7 +22,7 @@ function Home() {
           <NavigationPortfolio />
 
           <div className="center">
-            <h1 className="header-text-b black-text heavy-font">
+            <h1 className="header-text black-text heavy-font">
               Here are<br></br>my<br></br>passion<br></br>projects
               <span className="period">.</span>
             </h1>

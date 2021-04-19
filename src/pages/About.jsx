@@ -18,7 +18,7 @@ function Home() {
           <NavigationAbout />
 
           <div className="center">
-            <h1 className="header-text-b black-text heavy-font">
+            <h1 className="header-text black-text heavy-font">
               About me
               <span className="period">.</span>
             </h1>

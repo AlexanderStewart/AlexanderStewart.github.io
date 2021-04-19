@@ -18,7 +18,7 @@ function Circles() {
           <Navigation />
 
           <div className="center">
-            <h1 className="header-text-b black-text heavy-font">
+            <h1 className="header-text black-text heavy-font">
               Circles
               <span className="period">.</span>
             </h1>
