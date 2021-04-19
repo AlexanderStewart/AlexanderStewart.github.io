@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 //Local stuff.
 import "../../styles/main.scss";
@@ -6,10 +6,6 @@ import Navigation from "../../components/Navigation";
 import GoldenSumImage from "../../assets/golden_sum_screen_shot.png";
 
 function GoldenSum() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="golden-sum">
       <div className="half-background"></div>

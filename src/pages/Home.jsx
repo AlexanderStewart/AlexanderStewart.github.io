@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 // import { useRef, useLayoutEffect } from "react";
 
@@ -9,10 +9,6 @@ import HeadShot from "../assets/head_shot.png";
 import NavigationHome from "../components/NavigationHome";
 
 function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="home">
       <div className="line-a"></div>

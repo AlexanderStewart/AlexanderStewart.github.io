@@ -397,7 +397,15 @@ body {
   animation-name: slideInFromLeftB;
 }
 
-.portfolio-content-b .portfolio-content {
+.portfolio-content-b {
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInFromRight;
+}
+
+.portfolio-content {
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;

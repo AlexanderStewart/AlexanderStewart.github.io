@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Form, Card, Button, Alert } from "react-bootstrap";
 
@@ -7,15 +7,11 @@ import "../styles/main.scss";
 import NavigationContact from "../components/NavigationContact";
 
 function Contact() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const [state, handleSubmit] = useForm("xoqyvnve");
-  const [showContact, setShowContact] = useState(false);
+  let showContact = false;
 
   if (state.succeeded) {
-    setShowContact(true);
+    showContact = true;
   }
 
   return (

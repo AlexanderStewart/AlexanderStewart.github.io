@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 //Local stuff.
@@ -10,10 +10,6 @@ import CompCalc from "../assets/comp_sci_calc.jpeg";
 import NavigationPortfolio from "../components/NavigationPortfolio";
 
 function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="portfolio">
       <div className="half-background"></div>

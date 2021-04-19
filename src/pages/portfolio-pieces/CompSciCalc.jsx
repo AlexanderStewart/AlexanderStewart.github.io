@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 //Local stuff.
 import "../../styles/main.scss";
@@ -6,10 +6,6 @@ import Navigation from "../../components/Navigation";
 import CompSciCalcImage from "../../assets/compscicalc_screen_shot.png";
 
 function CompSciCalc() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="comp-sci-calc">
       <div className="half-background"></div>
