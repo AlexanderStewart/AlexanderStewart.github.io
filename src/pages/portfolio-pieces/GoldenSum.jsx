@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //Local stuff.
 import "../../styles/main.scss";
@@ -6,6 +6,10 @@ import Navigation from "../../components/Navigation";
 import GoldenSumImage from "../../assets/golden_sum_screen_shot.png";
 
 function GoldenSum() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="golden-sum">
       <div className="half-background"></div>
@@ -34,11 +38,22 @@ function GoldenSum() {
                   IOS with a single code base.
                   <br></br>
                   <br></br>
-                  Golden Sum features in-app purchases and ads. It features 100
-                  levels.
+                  Golden Sum features in-app purchases and ads. It has 100
+                  uniquely crafted levels.
+                  <br></br>
+                  <br></br>
+                  View Golden Sum on{" "}
+                  <a href="https://apps.apple.com/us/app/golden-sum-a-math-puzzle-game/id1458212055">
+                    IOS
+                  </a>{" "}
+                  or{" "}
+                  <a href="https://play.google.com/store/apps/details?id=com.goldensum&hl=en_CA&gl=US">
+                    Android
+                  </a>
+                  .
                 </p>
               </div>
-              <div>
+              <div className="animate-from-right">
                 <img
                   className="golden-sum-image"
                   src={GoldenSumImage}

@@ -3,15 +3,15 @@ import React, { useEffect } from "react";
 //Local stuff.
 import "../../styles/main.scss";
 import Navigation from "../../components/Navigation";
-import CigQuitImage from "../../assets/cig_quit_screen_shot.png";
+import CirclesImage from "../../assets/circles_screen_shot.png";
 
-function CigQuit() {
+function Circles() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="cig-quit">
+    <div className="circles">
       <div className="half-background"></div>
       <div className="horizontally-center-page">
         <div className="main-width">
@@ -19,7 +19,7 @@ function CigQuit() {
 
           <div className="center">
             <h1 className="header-text-b black-text heavy-font">
-              CigQuit
+              Circles
               <span className="period">.</span>
             </h1>
           </div>
@@ -43,7 +43,7 @@ function CigQuit() {
               <div className="animate-from-right">
                 <img
                   className="golden-sum-image"
-                  src={CigQuitImage}
+                  src={CirclesImage}
                   alt="Cig Quit Screenshot"
                 />
               </div>
@@ -55,4 +55,4 @@ function CigQuit() {
   );
 }
 
-export default CigQuit;
+export default Circles;

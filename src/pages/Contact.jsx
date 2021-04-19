@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //Local stuff.
 import "../styles/main.scss";
@@ -6,6 +6,10 @@ import NavigationContact from "../components/NavigationContact";
 import { Form, Card, Button } from "react-bootstrap";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="about">
       <div className="half-background"></div>

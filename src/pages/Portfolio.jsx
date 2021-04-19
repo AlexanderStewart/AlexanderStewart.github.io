@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 //Local stuff.
@@ -10,6 +10,10 @@ import CompCalc from "../assets/comp_sci_calc.jpeg";
 import NavigationPortfolio from "../components/NavigationPortfolio";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="portfolio">
       <div className="half-background"></div>
@@ -46,21 +50,18 @@ function Home() {
                 </p>
               </div>
               <div className="portfolio-content">
-                <a href="https://alexanderstewart.github.io/circles-web/">
+                <Link className="link" to="/circles">
                   <img
                     className="portfolio-content-image"
                     src={Circles}
                     alt="Circles Screenshot"
                   />
-                </a>
-                <h3 className="heavy-font portfolio-item-title">
-                  <a
-                    className="red-text"
-                    href="https://alexanderstewart.github.io/circles-web/"
-                  >
-                    Circles
-                  </a>
-                </h3>
+                </Link>
+                <Link className="link" to="/circles">
+                  <h3 className="heavy-font portfolio-item-title">
+                    <p className="red-text">Circles</p>
+                  </h3>
+                </Link>
                 <p className="blurb-c black-text light-font">
                   Circles is a number puzzle game made for the web that was
                   built with the framework React. Circles (as you can probably
@@ -88,23 +89,20 @@ function Home() {
             </div>
             <div className="flex-content-b">
               <div className="portfolio-content">
-                <a href="https://alexanderstewart.github.io/comp-sci-calculator/#/">
+                <Link className="link" to="/comp_sci_calc">
                   <img
                     className="portfolio-content-image"
                     src={CompCalc}
                     alt="CigQuit Screenshot"
                   />
-                </a>
-                <h3 className="heavy-font portfolio-item-title">
-                  <a
-                    className="red-text"
-                    href="https://alexanderstewart.github.io/comp-sci-calculator/#/"
-                  >
-                    CompSci
-                    <br></br>
-                    Calculator
-                  </a>
-                </h3>
+                </Link>
+                <Link className="link" to="/comp_sci_calc">
+                  <h3 className="heavy-font portfolio-item-title">
+                    <p className="red-text">
+                      CompSci<br></br>Calculator
+                    </p>
+                  </h3>
+                </Link>
                 <p className="blurb-c black-text light-font">
                   CompSciCalculator is a really simple tool to convert between
                   number systems.

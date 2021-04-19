@@ -3,15 +3,15 @@ import React, { useEffect } from "react";
 //Local stuff.
 import "../../styles/main.scss";
 import Navigation from "../../components/Navigation";
-import CigQuitImage from "../../assets/cig_quit_screen_shot.png";
+import CompSciCalcImage from "../../assets/compscicalc_screen_shot.png";
 
-function CigQuit() {
+function CompSciCalc() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="cig-quit">
+    <div className="comp-sci-calc">
       <div className="half-background"></div>
       <div className="horizontally-center-page">
         <div className="main-width">
@@ -19,7 +19,7 @@ function CigQuit() {
 
           <div className="center">
             <h1 className="header-text-b black-text heavy-font">
-              CigQuit
+              CompSciCalculator
               <span className="period">.</span>
             </h1>
           </div>
@@ -43,7 +43,7 @@ function CigQuit() {
               <div className="animate-from-right">
                 <img
                   className="golden-sum-image"
-                  src={CigQuitImage}
+                  src={CompSciCalcImage}
                   alt="Cig Quit Screenshot"
                 />
               </div>
@@ -55,4 +55,4 @@ function CigQuit() {
   );
 }
 
-export default CigQuit;
+export default CompSciCalc;

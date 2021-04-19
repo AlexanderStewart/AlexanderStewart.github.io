@@ -120,7 +120,15 @@ body {
   padding: 80px 0px;
 }
 
+.circles {
+  padding: 80px 0px;
+}
+
 .cig-quit {
+  padding: 80px 0px;
+}
+
+.comp-sci-calc {
   padding: 80px 0px;
 }
 
@@ -156,12 +164,20 @@ body {
   border-color: $black;
 }
 
+.animate-from-right {
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInFromRight;
+}
+
 .portfolio-content {
   width: 11em;
 }
 
 .portfolio-content-b {
-  width: 18em;
+  width: 26em;
 }
 
 .portfolio-content-double {
