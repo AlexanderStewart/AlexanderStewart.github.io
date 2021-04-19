@@ -22,25 +22,30 @@ function Contact() {
 
           <div className="flex-content-a-container">
             <div className="blurb">
-              <Card className="shadow bg-white rounded">
+              <Card border="dark" className="bg-white rounded border-3">
                 <Card.Body>
                   <Form>
                     <Form.Group controlId="exampleForm.ControlInput0">
-                      <Form.Label>Name</Form.Label>
-                      <Form.Control type="name" />
+                      <Form.Label className="label">Name</Form.Label>
+                      <Form.Control className="border-2" type="name" />
                     </Form.Group>
                     <Form.Group controlId="exampleForm.ControlInput1">
-                      <Form.Label>Email address</Form.Label>
+                      <Form.Label className="label">Email address</Form.Label>
                       <Form.Control
+                        className="border-2"
                         type="email"
                         placeholder="name@example.com"
                       />
                     </Form.Group>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
-                      <Form.Label>Message</Form.Label>
-                      <Form.Control as="textarea" rows={3} />
+                      <Form.Label className="label">Message</Form.Label>
+                      <Form.Control
+                        className="border-2"
+                        as="textarea"
+                        rows={3}
+                      />
                     </Form.Group>
-                    <Button variant="success" type="submit">
+                    <Button className="label" variant="dark" type="submit">
                       Submit
                     </Button>
                   </Form>
@@ -48,11 +53,13 @@ function Contact() {
               </Card>
               <Card
                 border="warning"
-                className="shadow bg-white mt-1 rounded text-align-center"
+                className="bg-white mt-1 rounded text-align-center border-3"
               >
                 <Card.Body>
-                  Don't trust this form? My email is
-                  alexander.stewart.developer@gmail.com
+                  Don't trust this form? My email is{" "}
+                  <a href="mailto:alexander.stewart.developer@gmail.com">
+                    alexander.stewart.developer@gmail.com
+                  </a>
                 </Card.Body>
               </Card>
             </div>

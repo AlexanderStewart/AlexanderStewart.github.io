@@ -57,6 +57,14 @@ body {
   text-align: right;
 }
 
+.justify-content-start {
+  justify-content: left !important;
+}
+
+.label {
+  float: left;
+}
+
 .opacity-zero {
   opacity: 0;
 }
@@ -106,6 +114,14 @@ body {
 
 .home {
   padding: 80px 0px;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-3 {
+  border-width: 3px !important;
 }
 
 .overlap {

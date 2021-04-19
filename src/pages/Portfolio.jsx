@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //Local stuff.
 import "../styles/main.scss";
@@ -26,21 +27,18 @@ function Home() {
           <div className="flex-content-a-container">
             <div className="flex-content-a">
               <div className="portfolio-content">
-                <a href="https://apps.apple.com/us/app/golden-sum-a-math-puzzle-game/id1458212055">
+                <Link className="link" to="/golden_sum">
                   <img
                     className="portfolio-content-image shadow"
                     src={GoldenSum}
                     alt="Golden Sum Screenshot"
                   />
-                </a>
-                <h3 className="heavy-font portfolio-item-title">
-                  <a
-                    className="red-text"
-                    href="https://apps.apple.com/us/app/golden-sum-a-math-puzzle-game/id1458212055"
-                  >
-                    Golden Sum
-                  </a>
-                </h3>
+                </Link>
+                <Link className="link" to="/golden_sum">
+                  <h3 className="heavy-font portfolio-item-title">
+                    <p className="red-text">Golden Sum</p>
+                  </h3>
+                </Link>
                 <p className="blurb-c black-text light-font">
                   Golden sum is a number puzzle game for Android and IOS. It was
                   built with Flutter and features in-app purchases as well as
