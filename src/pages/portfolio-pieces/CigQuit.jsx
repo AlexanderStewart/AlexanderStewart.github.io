@@ -3,11 +3,11 @@ import React from "react";
 //Local stuff.
 import "../../styles/main.scss";
 import Navigation from "../../components/Navigation";
-import GoldenSumImage from "../../assets/golden_sum_screen_shot.png";
+import CigQuitImage from "../../assets/cig_quit_screen_shot.png";
 
-function GoldenSum() {
+function CigQuit() {
   return (
-    <div className="golden-sum">
+    <div className="cig-quit">
       <div className="half-background"></div>
       <div className="horizontally-center-page">
         <div className="main-width">
@@ -15,7 +15,7 @@ function GoldenSum() {
 
           <div className="center">
             <h1 className="header-text-b black-text heavy-font">
-              Golden Sum
+              CigQuit
               <span className="period">.</span>
             </h1>
           </div>
@@ -41,8 +41,8 @@ function GoldenSum() {
               <div>
                 <img
                   className="golden-sum-image"
-                  src={GoldenSumImage}
-                  alt="Golden Sum Screenshot"
+                  src={CigQuitImage}
+                  alt="Cig Quit Screenshot"
                 />
               </div>
             </div>
@@ -53,4 +53,4 @@ function GoldenSum() {
   );
 }
 
-export default GoldenSum;
+export default CigQuit;

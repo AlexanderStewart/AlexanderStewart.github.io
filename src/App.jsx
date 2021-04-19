@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import GoldenSum from "./pages/portfolio-pieces/GoldenSum";
+import CigQuit from "./pages/portfolio-pieces/CigQuit";
 
 const App = () => {
   const cursorDot = useRef();
@@ -156,6 +157,7 @@ const App = () => {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/golden_sum" component={GoldenSum} />
+          <Route path="/cig_quit" component={CigQuit} />
         </Switch>
       </HashRouter>
     </div>

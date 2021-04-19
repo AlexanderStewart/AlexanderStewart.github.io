@@ -68,18 +68,18 @@ function Home() {
                 </p>
               </div>
               <div className="portfolio-content">
-                <a href="https://cigquit.org/">
+                <Link className="link" to="/cig_quit">
                   <img
                     className="portfolio-content-image"
                     src={CigQuit}
                     alt="CigQuit Screenshot"
                   />
-                </a>
-                <h3 className="heavy-font portfolio-item-title">
-                  <a className="red-text" href="https://cigquit.org/">
-                    CigQuit
-                  </a>
-                </h3>
+                </Link>
+                <Link className="link" to="/cig_quit">
+                  <h3 className="heavy-font portfolio-item-title">
+                    <p className="red-text">CigQuit</p>
+                  </h3>
+                </Link>
                 <p className="blurb-c black-text light-font">
                   CigQuit is a MERN stack web app designed to help motivate
                   users to quick smoking by tracking various smoking metrics.
@@ -100,7 +100,9 @@ function Home() {
                     className="red-text"
                     href="https://alexanderstewart.github.io/comp-sci-calculator/#/"
                   >
-                    CompSciCalculator
+                    CompSci
+                    <br></br>
+                    Calculator
                   </a>
                 </h3>
                 <p className="blurb-c black-text light-font">
