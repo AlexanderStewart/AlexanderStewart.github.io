@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import GoldenSum from "./pages/portfolio-pieces/Golden-Sum";
+import GoldenSum from "./pages/portfolio-pieces/GoldenSum";
 
 const App = () => {
   const cursorDot = useRef();

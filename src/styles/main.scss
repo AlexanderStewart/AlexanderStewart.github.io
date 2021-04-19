@@ -116,6 +116,10 @@ body {
   padding: 80px 0px;
 }
 
+.border-none {
+  border: none !important;
+}
+
 .border-2 {
   border-width: 2px !important;
 }
@@ -127,6 +131,10 @@ body {
 .overlap {
   z-index: 999;
   position: relative;
+}
+
+.gold-sum-img {
+  width: 400px;
 }
 
 .portfolio-content-image {
@@ -141,6 +149,14 @@ body {
 
 .portfolio-content {
   width: 11em;
+}
+
+.portfolio-content-b {
+  width: 18em;
+}
+
+.portfolio-content-double {
+  width: 25em;
 }
 
 .navigation-container-a {
