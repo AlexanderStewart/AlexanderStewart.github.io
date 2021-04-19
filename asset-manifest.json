@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.1269e9a1.chunk.css",
-    "main.js": "/static/js/main.343fe272.chunk.js",
-    "main.js.map": "/static/js/main.343fe272.chunk.js.map",
+    "main.css": "/static/css/main.15de76ad.chunk.css",
+    "main.js": "/static/js/main.5dde197f.chunk.js",
+    "main.js.map": "/static/js/main.5dde197f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1250536c.js",
     "runtime-main.js.map": "/static/js/runtime-main.1250536c.js.map",
-    "static/js/2.b4eeb13c.chunk.js": "/static/js/2.b4eeb13c.chunk.js",
-    "static/js/2.b4eeb13c.chunk.js.map": "/static/js/2.b4eeb13c.chunk.js.map",
+    "static/js/2.b424c1d1.chunk.js": "/static/js/2.b424c1d1.chunk.js",
+    "static/js/2.b424c1d1.chunk.js.map": "/static/js/2.b424c1d1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b0b2fcda35924fb58b9c0b250725c6cf.js": "/precache-manifest.b0b2fcda35924fb58b9c0b250725c6cf.js",
+    "precache-manifest.24ce2311bb3ac7105245be74c0dc2865.js": "/precache-manifest.24ce2311bb3ac7105245be74c0dc2865.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1269e9a1.chunk.css.map": "/static/css/main.1269e9a1.chunk.css.map",
-    "static/js/2.b4eeb13c.chunk.js.LICENSE.txt": "/static/js/2.b4eeb13c.chunk.js.LICENSE.txt",
+    "static/css/main.15de76ad.chunk.css.map": "/static/css/main.15de76ad.chunk.css.map",
+    "static/js/2.b424c1d1.chunk.js.LICENSE.txt": "/static/js/2.b424c1d1.chunk.js.LICENSE.txt",
     "static/media/cig_quit.jpeg": "/static/media/cig_quit.c513b07a.jpeg",
     "static/media/cig_quit_screen_shot.png": "/static/media/cig_quit_screen_shot.df947ae5.png",
     "static/media/circles.png": "/static/media/circles.cedd46cc.png",
+    "static/media/circles_screen_shot.png": "/static/media/circles_screen_shot.7908e888.png",
     "static/media/comp_sci_calc.jpeg": "/static/media/comp_sci_calc.bfe20071.jpeg",
+    "static/media/compscicalc_screen_shot.png": "/static/media/compscicalc_screen_shot.f8a15522.png",
     "static/media/golden_sum.png": "/static/media/golden_sum.8e796db9.png",
     "static/media/golden_sum_screen_shot.png": "/static/media/golden_sum_screen_shot.1a4f2310.png",
     "static/media/head_shot.png": "/static/media/head_shot.8bb6ae2b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1250536c.js",
-    "static/js/2.b4eeb13c.chunk.js",
-    "static/css/main.1269e9a1.chunk.css",
-    "static/js/main.343fe272.chunk.js"
+    "static/js/2.b424c1d1.chunk.js",
+    "static/css/main.15de76ad.chunk.css",
+    "static/js/main.5dde197f.chunk.js"
   ]
 }
