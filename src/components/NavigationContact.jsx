@@ -5,19 +5,23 @@ import "../styles/main.scss";
 function Nav() {
   return (
     <div className="navigation">
-      <Link className="link" to="/">
-        <p className="link-text black-text light-font">Home</p>
+      <Link className="link-text black-text light-font" to="/">
+        Home
       </Link>
-      <Link className="link" to="/portfolio">
-        <p className="link-text black-text light-font">Portfolio</p>
+      <br></br>
+      <Link className="link-text black-text light-font" to="/portfolio">
+        Portfolio
       </Link>
-      <Link className="link" to="/about">
-        <p className="link-text black-text light-font">About me</p>
+      <br></br>
+      <Link className="link-text black-text light-font" to="/about">
+        About me
       </Link>
-      <Link className="link" to="/contact">
-        <p className="link-text link-underline black-text light-font">
-          Contact
-        </p>
+      <br></br>
+      <Link
+        className="link-text black-text light-font link-underline"
+        to="/contact"
+      >
+        Contact
       </Link>
     </div>
   );

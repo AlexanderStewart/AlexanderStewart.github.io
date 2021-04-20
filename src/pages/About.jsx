@@ -30,7 +30,7 @@ function Home() {
             </h1>
           </div>
 
-          <div className="flex-content-a-container">
+          <div className="flex-content-a-container mt-5">
             <div className="flex-content-a">
               <p className="blurb text-align-left black-text light-font">
                 Thanks to a knack for numbers and key role models in my youth,

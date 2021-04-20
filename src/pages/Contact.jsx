@@ -96,7 +96,7 @@ function Contact() {
                 className="bg-white mt-1 rounded text-align-left border-3"
               >
                 <Card.Body>
-                  Don't trust this form? My email:{" "}
+                  Don't trust this form? My email is{" "}
                   <a href="mailto:alexander.stewart.developer@gmail.com">
                     alexander.stewart.developer@gmail.com
                   </a>
