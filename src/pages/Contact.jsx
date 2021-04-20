@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import { useForm, ValidationError } from "@formspree/react";
 import { Form, Card, Button, Alert } from "react-bootstrap";
 
@@ -7,6 +8,16 @@ import "../styles/main.scss";
 import NavigationContact from "../components/NavigationContact";
 
 function Contact() {
+  let history = useHistory();
+
+  useEffect(() => {
+    // For some strange reason we can't execute the window scroll right away.
+    // Fix was to wait 100 milliseconds, not ideal but it works...
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 100);
+  }, [history]);
+
   const [state, handleSubmit] = useForm("xoqyvnve");
   let showContact = false;
 

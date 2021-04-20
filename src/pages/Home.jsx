@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useHistory } from "react-router-dom";
 // import { useRef, useLayoutEffect } from "react";
 
 //Local stuff.
@@ -9,6 +9,16 @@ import HeadShot from "../assets/head_shot.png";
 import NavigationHome from "../components/NavigationHome";
 
 function Home() {
+  let history = useHistory();
+
+  useEffect(() => {
+    // For some strange reason we can't execute the window scroll right away.
+    // Fix was to wait 100 milliseconds, not ideal but it works...
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 100);
+  }, [history]);
+
   return (
     <div className="home">
       <div className="line-a"></div>

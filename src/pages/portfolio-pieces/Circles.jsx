@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 //Local stuff.
 import "../../styles/main.scss";
@@ -6,6 +7,16 @@ import Navigation from "../../components/Navigation";
 import CirclesImage from "../../assets/circles_screen_shot.png";
 
 function Circles() {
+  let history = useHistory();
+
+  useEffect(() => {
+    // For some strange reason we can't execute the window scroll right away.
+    // Fix was to wait 100 milliseconds, not ideal but it works...
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 100);
+  }, [history]);
+
   return (
     <div className="circles">
       <div className="half-background"></div>
