@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useHistory } from "react-router-dom";
 
 //Local stuff.
 import "../styles/main.scss";
@@ -9,7 +9,17 @@ import CigQuit from "../assets/cig_quit.jpeg";
 import CompCalc from "../assets/comp_sci_calc.jpeg";
 import NavigationPortfolio from "../components/NavigationPortfolio";
 
-function Home() {
+function Portfolio() {
+  let history = useHistory();
+
+  useEffect(() => {
+    // For some strange reason we can't execute the window scroll right away.
+    // Fix was to wait 100 milliseconds, not ideal but it works...
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 100);
+  }, [history]);
+
   return (
     <div className="portfolio">
       <div className="half-background"></div>
@@ -112,4 +122,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Portfolio;

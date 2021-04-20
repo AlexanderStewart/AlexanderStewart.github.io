@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef, useLayoutEffect } from "react";
+import { useRef, useEffect, useLayoutEffect } from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 //Pages.
@@ -15,6 +15,14 @@ import CompSciCalc from "./pages/portfolio-pieces/CompSciCalc";
 const App = () => {
   const cursorDot = useRef();
   const cursorDotOutline = useRef();
+
+  useEffect(() => {
+    // For some strange reason we can't execute the window scroll right away.
+    // Fix was to wait 100 milliseconds, not ideal but it works...
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 100);
+  });
 
   useLayoutEffect(() => {
     var cursor = {
@@ -150,8 +158,6 @@ const App = () => {
 
   return (
     <div>
-      <div className="cursor-dot-outline" ref={cursorDotOutline}></div>
-      <div className="cursor-dot" ref={cursorDot}></div>
       <HashRouter>
         <Switch>
           <Route path="/" component={Home} exact />
@@ -164,6 +170,8 @@ const App = () => {
           <Route path="/comp_sci_calc" component={CompSciCalc} />
         </Switch>
       </HashRouter>
+      <div className="cursor-dot-outline" ref={cursorDotOutline}></div>
+      <div className="cursor-dot" ref={cursorDot}></div>
     </div>
   );
 };

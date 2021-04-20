@@ -8,9 +8,6 @@ html,
 body {
   cursor: none;
   width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
 }
 
 body {
@@ -18,4 +15,12 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  height: 100%;
 }
